@@ -1,8 +1,9 @@
+/* iniciar com margens padronizadas
+	atribuir box-sizing iguais p/ input e button
+	para que com padding (preenchimento) permanecam 
+	de mesmo tamanho */
 * {
 	margin: 0;
-	/* atribuir box-sizing iguais p/ input e button
-	para que com padding (preenchimento) permanecam 
-	de mesmo tamanho */ 
 	box-sizing: border-box;
 }
 
@@ -18,7 +19,6 @@ body {
 	width: 80%;
 	max-width: 400px;
 	margin-inline:  auto;
-	border: 2px solid red;
 }
 
 h1 {
@@ -56,4 +56,18 @@ ao passar mouse acima do botao*/
 button:hover {
 	filter: brightness(1.2);
 	cursor: pointer;
+}
+
+/* opacidade no js p/ sumir resposta */
+#resposta {
+	margin-top: 30px;
+	transition: opacity 1s;
+}
+
+/* div, dentro de "resposta" no js */
+#resposta div {
+	font-size: 16px;
+	font-weight: normal;
+	opacity: 0.9;
+	margin-bottom: 10px;
 }
