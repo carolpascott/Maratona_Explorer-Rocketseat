@@ -1,5 +1,9 @@
 * {
 	margin: 0;
+	/* atribuir box-sizing iguais p/ input e button
+	para que com padding (preenchimento) permanecam 
+	de mesmo tamanho */ 
+	box-sizing: border-box;
 }
 
 body {
@@ -31,7 +35,7 @@ p {
 input, button {
 	display: block;
 	width: 100%;
-	padding: 20px;
+	padding: 20px; /*preenchimento*/
 	font-size: 20px;
 	border-radius: 4px;
 }
@@ -44,7 +48,7 @@ button {
 	border: none;
 	background-color: blueviolet;
 	color: white;
-	transition: .2s;
+	transition: .2s; /* p/ filtro */
 }
 
 /*pseudo-class : hover

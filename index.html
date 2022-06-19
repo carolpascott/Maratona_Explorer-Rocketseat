@@ -5,14 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>maratona explorer</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js" defer></script>
 </head>
 <body>
 	<div id="container">
 		<img src="imagens/bola_cristal.png" width="200">
 		<h1>Vou revelar seu destino!</h1>
 		<p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-		<input type="text" placeholder="Digite sua pergunta">
-		<button>Fazer pergunta</button>
+		<input id="pergunta" type="text" placeholder="Digite sua pergunta">
+		<button onclick="pergunta()"> Fazer pergunta </button>
+		<h3 id="resposta"></h3>
 	</div>
 </body>
 </html>
